@@ -6,6 +6,7 @@ WORKDIR /app
 
 # Set environment variables for the new user
 ENV MYSQL_ROOT_PASSWORD=password
+ENV MYSQL_DATABASE=users
 
 COPY backup.sql /docker-entrypoint-initdb.d/
 
